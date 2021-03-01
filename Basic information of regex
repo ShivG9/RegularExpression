@@ -1,2 +1,7 @@
+// Links : https://stackoverflow.com/questions/8450261/need-a-regex-that-makes-sure-the-number-starts-with-01-02-or-08-and-is-10-or-11/8450508
+
 \d - numarical digits
 [0-9] - numarical digits with the range
+
+1) Create a regex which allow the numerical digits and which is not start with [08]
+Regex: ((?![0][8])\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{2}\d{4}) 
